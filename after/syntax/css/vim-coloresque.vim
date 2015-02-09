@@ -122,9 +122,9 @@ function! s:VimCssInit(update)
     if a:update==1
         call s:ClearMatches()
     endif
-    :set isk+=-
-    :set isk+=#
-    :set isk+=.
+    :setlocal iskeyword+=-
+    :setlocal iskeyword+=#
+    :setlocal iskeyword+=.
 
     if !exists("b:color_pattern")
         let b:color_pattern = {}
