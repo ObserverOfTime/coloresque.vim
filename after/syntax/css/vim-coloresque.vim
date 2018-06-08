@@ -1,8 +1,9 @@
 " Name:         Coloresque
-" Language:     color preview in vim
+" Description:  Color preview for Vim
 " Author:       Gorodinskii Konstantin <gor.konstantin@gmail.com>
+" Maintainer:   ObserverOfTime <chronobserver@disroot.org>
 " Licence:      Vim license
-" Version:      0.9.5
+" Version:      0.9.9
 " based on
 " https://github.com/ap/vim-css-color
 " https://github.com/lilydjwg/colorizer
