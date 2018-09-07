@@ -42,10 +42,12 @@ Plugin 'ObserverOfTime/vim-coloresque'
 
 ```vim
 let g:coloresque_whitelist = [
-            \ 'css', 'html', 'jsx',
-            \ 'less', 'php', 'postcss',
+            \ 'css', 'haml', 'html',
+            \ 'htmldjango', 'javascript',
+            \ 'jsx', 'less', 'php', 
+            \ 'postcss', 'pug', 'qml',
             \ 'sass', 'scss', 'stylus',
-            \ 'svg',  'vim', 'xml']
+            \ 'svg', 'vim', 'vue', 'xml']
 ```
 
 ```vim
