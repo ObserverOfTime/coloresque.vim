@@ -1,11 +1,11 @@
 {
   "name" : "Coloresque",
-  "version" : "0.9.10",
+  "version" : "0.10.0",
   "author" : "Gorodinskii Konstantin <gor.konstantin@gmail.com>",
   "maintainer": "ObserverOfTime <chronobserver@disroot.org>",
   "repository" : {
     "type": "git",
-    "url": "git://github.com/ObserverOfTime/vim-coloresque.git"
+    "url": "git://github.com/ObserverOfTime/coloresque.vim.git"
   },
   "dependencies" : {},
   "description" : "Color preview for Vim"

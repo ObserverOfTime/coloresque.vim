@@ -1,0 +1,69 @@
+*coloresque*   Color preview for Vim
+
+Author:      ObserverOfTime <chronobserver@disroot.org>
+Version:     0.10.0
+License:     Vim License (see |license|)
+
+==============================================================================
+CONTENTS                                               *coloresque-contents*
+
+  1. Introduction                                  |coloresque-introduction|
+  2. Variables                                        |coloresque-variables|
+    2.1 g:coloresque_whitelist                      |g:coloresque_whitelist|
+    2.2 g:coloresque_blacklist                      |g:coloresque_blacklist|
+    2.3 g:coloresque_extra_filetypes          |g:coloresque_extra_filetypes|
+  3. Commands                                          |coloresque-commands|
+    3.1 ColoresqueAddFiletype                        |ColoresqueAddFiletype|
+
+==============================================================================
+INTRODUCTION                                       *coloresque-introduction*
+
+Coloresque enables previews for hex, rgb(a), and hsl(a) colors.
+It supports the |filetypes| included in the default |g:coloresque_whitelist|
+list out of the box. To add a new filetype, use the |ColoresqueAddFiletype|
+command and add it to |g:coloresque_extra_filetypes|.
+
+==============================================================================
+VARIABLES                                             *coloresque-variables*
+
+------------------------------------------------------------------------------
+g:coloresque_whitelist                              *g:coloresque_whitelist*
+
+  Type |List|
+  Default `[ 'css', 'haml', 'html', 'htmldjango',`
+          `\ 'javascript', 'jsx', 'less', 'php',`
+          `\ 'postcss', 'pug', 'qml', 'sass',`
+          `\ 'scss', 'sh', 'stylus', 'svg',`
+          `\ 'typescript', 'vim', 'vue', 'xml' ]`
+
+  A list of |filetypes| for which |coloresque| will be enabled.
+
+------------------------------------------------------------------------------
+g:coloresque_blacklist                              *g:coloresque_blacklist*
+
+  Type |List|
+  Default `[]`
+
+  A list of |filetypes| for which |coloresque| will be disabled.
+
+------------------------------------------------------------------------------
+g:coloresque_extra_filetypes                  *g:coloresque_extra_filetypes*
+
+  Type |List|
+  Default `[]`
+
+  A list of extra |filetypes| added with |ColoresqueAddFiletype|.
+
+==============================================================================
+COMMANDS                                               *coloresque-commands*
+
+------------------------------------------------------------------------------
+
+ColoresqueAddFiletype                                *ColoresqueAddFiletype*
+
+  Takes a |filetype| as an argument and adds a syntax file
+  to the plugin's |after| directory. To enable the filetype,
+  add it to the |g:coloresque_extra_filetypes| variable.
+
+vim:set ft=help et ts=2 sw=2:
+
